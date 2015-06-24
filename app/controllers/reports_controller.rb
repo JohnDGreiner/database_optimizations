@@ -10,4 +10,8 @@ class ReportsController < ApplicationController
     end
     @hits.sort! {|a, b| b.percent_similarity <=> a.percent_similarity}
   end
+
+  def thank_you
+    @email = params[:email]
+  end
 end

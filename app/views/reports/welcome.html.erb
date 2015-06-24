@@ -1,0 +1,12 @@
+<h3> Submit a new request for a report to be sent to your email </h3>
+
+<%= form_tag reports_thank_you_path, method: :post do %>
+
+  <%= label_tag :email %>
+  <%= text_field_tag :email, nil, placeholder: "Email" %><br>
+
+  <%= label_tag :name, "Assembly" %>
+  <%= text_field_tag :name, nil, placeholder: "Assembly Name"  %><br>
+
+  <%= submit_tag "Submit Report" %>
+<% end %>
